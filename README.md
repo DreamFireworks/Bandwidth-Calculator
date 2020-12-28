@@ -6,7 +6,7 @@ Hello,
   And then asks user to enter the Download Speed in MegaBits.
   Finally it calculates the time in seconds, minutes and hours, and shows the result in the bottom.
 
-## Formula for calculation:  
+## Formula for calculation:(MB)
 (Megabytes) / (Download Speed In Megabits / 8) = Time In Seconds
 
 # In GB version (mb-bandwidthCalc.py) :
@@ -14,5 +14,9 @@ Hello,
   And then asks user to enter the Download Speed in MegaBits.
   Finally it calculates the time in seconds, minutes and hours, and shows the result in the bottom.
 
-## Formula for calculation: Formula for calculation:    
+## Formula for calculation:(GB)
 (Gigabytes*1024) / (Download Speed In Megabits / 8) = Time In Seconds
+
+
+## Future plan: 
+Merge two program into one.
