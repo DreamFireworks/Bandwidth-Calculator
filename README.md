@@ -22,6 +22,5 @@ Hello,
 Merge two program into one.
 
 
-<a href="https://www.linkedin.com/in/serhan-eraslan/" target="_blank" align="left">
-  <img src="https://komarev.com/ghpvc/?username=dreamfireworks&label=Profile%20views&color=0e75b6&style=flat" alt="dreamfireworks" />
-</a>
+## License
+[MIT](https://github.com/DreamFireworks/Bandwidth-Calculator/blob/main/LICENSE)
