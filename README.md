@@ -21,6 +21,5 @@ Hello,
 ## Future plan: 
 Merge two program into one.
 
-
 ## License
 [MIT](https://github.com/DreamFireworks/Bandwidth-Calculator/blob/main/LICENSE)
