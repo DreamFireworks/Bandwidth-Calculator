@@ -15,26 +15,33 @@ def choicemaker():
         forgigabytes()
     else:
         formegabytes()
+        
 
 def forgigabytes():
+    global choice
     fileSizeInGb = float(entry1.get())
     megabytes=fileSizeInGb*1024
     downSpeed = int(entry2.get())
-    time=megabytes/(downSpeed/8) #formula
-    result1.config(text=str(round(time,2)) + " seconds\n" +
-      " = " + str(round((time/60),2)) + " Minutes\n" +
-      " = " + str( round((time/60)/60,2)) + " Hours\n" + 
-      " in " + str(downSpeed/8) + "MB per sec" )
-
+    if choice[1] == "Mbps":
+        time=megabytes/(downSpeed/8) #formula
+        result1.config(text=str(round(time,2)) + " seconds\n" +
+        " = " + str(round((time/60),2)) + " Minutes\n" +
+        " = " + str( round((time/60)/60,2)) + " Hours\n" + 
+        " in " + str(downSpeed/8) + "MB per sec" )
+    else:
+        pass
+        
 def formegabytes():
     fileSizeInMegabytes = int(entry1.get())
     downSpeed = int(entry2.get())
-    time=fileSizeInMegabytes/(downSpeed/8) #formula
-    result1.config(text=str(round(time,2)) + " seconds\n" +
-      " = " + str(round((time/60),2)) + " Minutes\n" +
-      " = " + str( round((time/60)/60,2)) + " Hours\n" + 
-      " in " + str(downSpeed/8) + " MegaBytes per sec" )
-
+    if choice[1] == "Mbps":
+        time=fileSizeInMegabytes/(downSpeed/8) #formula
+        result1.config(text=str(round(time,2)) + " seconds\n" +
+        " = " + str(round((time/60),2)) + " Minutes\n" +
+        " = " + str( round((time/60)/60,2)) + " Hours\n" + 
+        " in " + str(downSpeed/8) + " MB per sec" )
+    else:
+        pass
 
 # File size
 label1= Label(window,text="File's size (GB) (E.g 1.4)",justify="center")
