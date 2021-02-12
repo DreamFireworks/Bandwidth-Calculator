@@ -1,7 +1,7 @@
 from tkinter import *
 
 window = Tk()
-window.geometry("450x450")
+window.geometry("420x300")
 window.title("GB")
 window.resizable(width=False,
                  height=False)
@@ -53,7 +53,7 @@ file_choices = {'GB','MB'}
 file_var.set('GB') # set the default option
 
 popupMenu = OptionMenu(window, file_var, *file_choices)
-popupMenu.place(x=300,y=45,width=100,height=25)
+popupMenu.place(x=300,y=50,width=100,height=25)
 
 # Download Speed
 label2 = Label(window,text="Download Speed (MegaBits) (E.g 25)",justify="center")
@@ -65,7 +65,7 @@ speed_choices = { 'Mbps','Kbps'}
 speed_var.set('Mbps') # set the default option
 
 popupMenu = OptionMenu(window, speed_var, *speed_choices)
-popupMenu.place(x=300,y=145,width=100,height=25)
+popupMenu.place(x=300,y=150,width=100,height=25)
 
 # Calculation 
 calculate = Button(window,text= "Calculate!",command=choicemaker)
